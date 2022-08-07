@@ -12,9 +12,9 @@ export const availableLocales: ILocales = {
     iso: 'en-US',
     flag: 'i-twemoji-flag-us-outlying-islands',
   },
-  tr: {
-    name: 'Turkce',
-    iso: 'tr-TR',
-    flag: 'i-twemoji-flag-turkey',
+  ko: {
+    name: 'Korean',
+    iso: 'ko-KR',
+    flag: 'i-twemoji-flag-south-korea',
   },
 }

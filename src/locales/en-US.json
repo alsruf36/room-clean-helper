@@ -1,5 +1,23 @@
 {
-  "hello": "hello",
-  "follow": "Follow Me",
-  "modal": "Modal"
+  "scanTitle": "Scan Furniture",
+  "scanCardTitle": "Scan It!",
+  "scanCardInfo": "Scan Furniture",
+  "scanCardModel": "스캔 모델",
+  "recognized": {
+    "Card": {
+      "NumberOfRecognition": {
+        "Title": "Recog. ",
+        "Suffix": "times"
+      },
+      "CleanInfo": {
+        "Title": "Clean Info",
+        "Suffix": "times"
+      },
+      "LastClean": {
+        "Title": "Last Clean",
+        "Suffix": "days ago"
+      }
+    }
+  },
+  "recognizedFurniture": "Recognized Furniture"
 }

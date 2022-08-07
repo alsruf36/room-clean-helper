@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { InitApp } from '~/utils/initApp'
+import '@tensorflow/tfjs-backend-webgl'
 InitApp()
 const locale = useState<string>('locale.i18n')
 </script>
@@ -7,7 +8,7 @@ const locale = useState<string>('locale.i18n')
 <template>
   <Html :lang="locale">
     <Body
-      class="bg-white text-gray-800 antialiased transition-colors duration-300 dark:bg-gray-900 dark:text-gray-200"
+      class="antialiased text-gray-800 transition-colors duration-300 bg-white dark:bg-gray-900 dark:text-gray-200"
     >
       <NuxtLayout>
         <NuxtPage />

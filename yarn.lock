@@ -359,6 +359,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/parser@npm:^7.18.4":
+  version: 7.18.11
+  resolution: "@babel/parser@npm:7.18.11"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 5ecc75b83e62ec53a947b1635a6ca75d6210d4a4f962f9f16f4239a6783f98e57f9662b598fa2fb1b8e12c0ad5c2bd86846ed0b97b85eb73dd7498b3a6d71a4b
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-syntax-import-meta@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/plugin-syntax-import-meta@npm:7.10.4"
@@ -788,7 +797,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/node-pre-gyp@npm:^1.0.5":
+"@mapbox/node-pre-gyp@npm:1.0.9, @mapbox/node-pre-gyp@npm:^1.0.5":
   version: 1.0.9
   resolution: "@mapbox/node-pre-gyp@npm:1.0.9"
   dependencies:
@@ -1326,6 +1335,119 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tensorflow/tfjs-backend-cpu@npm:3.19.0":
+  version: 3.19.0
+  resolution: "@tensorflow/tfjs-backend-cpu@npm:3.19.0"
+  dependencies:
+    "@types/seedrandom": ^2.4.28
+    seedrandom: ^3.0.5
+  peerDependencies:
+    "@tensorflow/tfjs-core": 3.19.0
+  checksum: 3baaaa1cae4fa2163803bf62ddb87ee36d271724513b553e2b62ebf89e3c2a0bf45bc675312150edeaf2b4abcf895a2875ba59471b80aa939bcf266af432c300
+  languageName: node
+  linkType: hard
+
+"@tensorflow/tfjs-backend-webgl@npm:3.19.0, @tensorflow/tfjs-backend-webgl@npm:^3.19.0":
+  version: 3.19.0
+  resolution: "@tensorflow/tfjs-backend-webgl@npm:3.19.0"
+  dependencies:
+    "@tensorflow/tfjs-backend-cpu": 3.19.0
+    "@types/offscreencanvas": ~2019.3.0
+    "@types/seedrandom": ^2.4.28
+    "@types/webgl-ext": 0.0.30
+    "@types/webgl2": 0.0.6
+    seedrandom: ^3.0.5
+  peerDependencies:
+    "@tensorflow/tfjs-core": 3.19.0
+  checksum: ade332b5334724286b21d9c11f1662bb5221617cd7eccda25b51e83a07c569767ec2972cefe14e151cfa18956a539b3d3ab9fe58eb716c51b63e4e9e0a4885a1
+  languageName: node
+  linkType: hard
+
+"@tensorflow/tfjs-converter@npm:3.19.0":
+  version: 3.19.0
+  resolution: "@tensorflow/tfjs-converter@npm:3.19.0"
+  peerDependencies:
+    "@tensorflow/tfjs-core": 3.19.0
+  checksum: 51d7c99bec24808b0596bc3b03fae7b8c7e7cadf51786a0beddc72ba4df24aabe53710c2e780fe4362d81b737dc88c67d2a8dae7baa93de883b45695fe98bf2b
+  languageName: node
+  linkType: hard
+
+"@tensorflow/tfjs-core@npm:3.19.0":
+  version: 3.19.0
+  resolution: "@tensorflow/tfjs-core@npm:3.19.0"
+  dependencies:
+    "@types/long": ^4.0.1
+    "@types/offscreencanvas": ~2019.3.0
+    "@types/seedrandom": ^2.4.28
+    "@types/webgl-ext": 0.0.30
+    "@webgpu/types": 0.1.16
+    long: 4.0.0
+    node-fetch: ~2.6.1
+    seedrandom: ^3.0.5
+  checksum: f35ce93882d753c4200dfb36ba3bae939267758501a2c8d52203bd60d4a8b013f4187479103f60ff9aafda4d13b79609ca84740c2312c96a5677701729b633f5
+  languageName: node
+  linkType: hard
+
+"@tensorflow/tfjs-data@npm:3.19.0":
+  version: 3.19.0
+  resolution: "@tensorflow/tfjs-data@npm:3.19.0"
+  dependencies:
+    "@types/node-fetch": ^2.1.2
+    node-fetch: ~2.6.1
+    string_decoder: ^1.3.0
+  peerDependencies:
+    "@tensorflow/tfjs-core": 3.19.0
+    seedrandom: ^3.0.5
+  checksum: 1bb0d150a5dd9b79e2bc414074064ecd29ce77ffe74db3b8cc95d828d598068cc72e6c990f3e7020203e6288f29197a78c8145570930a45dc9581ec7265f8345
+  languageName: node
+  linkType: hard
+
+"@tensorflow/tfjs-layers@npm:3.19.0":
+  version: 3.19.0
+  resolution: "@tensorflow/tfjs-layers@npm:3.19.0"
+  peerDependencies:
+    "@tensorflow/tfjs-core": 3.19.0
+  checksum: 43c362ff53506a4c6b50c1d602a307fcaaf7aa473b1360165d2a1297e0b1c03197d5408bd22b44e7c14f3dfab2f1eabc725b2c73470cf30b0505b432ab0962e2
+  languageName: node
+  linkType: hard
+
+"@tensorflow/tfjs-node@npm:^3.19.0":
+  version: 3.19.0
+  resolution: "@tensorflow/tfjs-node@npm:3.19.0"
+  dependencies:
+    "@mapbox/node-pre-gyp": 1.0.9
+    "@tensorflow/tfjs": 3.19.0
+    adm-zip: ^0.5.2
+    google-protobuf: ^3.9.2
+    https-proxy-agent: ^2.2.1
+    progress: ^2.0.0
+    rimraf: ^2.6.2
+    tar: ^4.4.6
+  checksum: 5be4c55838e251c7aef497f5d3b1739c47afc567d611d3197347265a6032ee18a62545485c3c6902e0c35c8d48a9fefc78d40363be99b889971b260dd7bd39a6
+  languageName: node
+  linkType: hard
+
+"@tensorflow/tfjs@npm:3.19.0, @tensorflow/tfjs@npm:^3.19.0":
+  version: 3.19.0
+  resolution: "@tensorflow/tfjs@npm:3.19.0"
+  dependencies:
+    "@tensorflow/tfjs-backend-cpu": 3.19.0
+    "@tensorflow/tfjs-backend-webgl": 3.19.0
+    "@tensorflow/tfjs-converter": 3.19.0
+    "@tensorflow/tfjs-core": 3.19.0
+    "@tensorflow/tfjs-data": 3.19.0
+    "@tensorflow/tfjs-layers": 3.19.0
+    argparse: ^1.0.10
+    chalk: ^4.1.0
+    core-js: 3
+    regenerator-runtime: ^0.13.5
+    yargs: ^16.0.3
+  bin:
+    tfjs-custom-module: dist/tools/custom_module/cli.js
+  checksum: 92c410b9c0b3dcf687650c6ed3cf1bea24dd4153e0a30461646f78ec556c696c733897344caaf10159ccf0d3eb50ced26ef31175ffda30661cfe6813e0988259
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -1379,12 +1501,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/long@npm:^4.0.1":
+  version: 4.0.2
+  resolution: "@types/long@npm:4.0.2"
+  checksum: d16cde7240d834cf44ba1eaec49e78ae3180e724cd667052b194a372f350d024cba8dd3f37b0864931683dab09ca935d52f0c4c1687178af5ada9fc85b0635f4
+  languageName: node
+  linkType: hard
+
 "@types/mdast@npm:^3.0.0":
   version: 3.0.10
   resolution: "@types/mdast@npm:3.0.10"
   dependencies:
     "@types/unist": "*"
   checksum: 3f587bfc0a9a2403ecadc220e61031b01734fedaf82e27eb4d5ba039c0eb54db8c85681ccc070ab4df3f7ec711b736a82b990e69caa14c74bf7ac0ccf2ac7313
+  languageName: node
+  linkType: hard
+
+"@types/node-fetch@npm:^2.1.2":
+  version: 2.6.2
+  resolution: "@types/node-fetch@npm:2.6.2"
+  dependencies:
+    "@types/node": "*"
+    form-data: ^3.0.0
+  checksum: 6f73b1470000d303d25a6fb92875ea837a216656cb7474f66cdd67bb014aa81a5a11e7ac9c21fe19bee9ecb2ef87c1962bceeaec31386119d1ac86e4c30ad7a6
   languageName: node
   linkType: hard
 
@@ -1399,6 +1538,13 @@ __metadata:
   version: 2.4.1
   resolution: "@types/normalize-package-data@npm:2.4.1"
   checksum: e87bccbf11f95035c89a132b52b79ce69a1e3652fe55962363063c9c0dae0fe2477ebc585e03a9652adc6f381d24ba5589cc5e51849df4ced3d3e004a7d40ed5
+  languageName: node
+  linkType: hard
+
+"@types/offscreencanvas@npm:~2019.3.0":
+  version: 2019.3.0
+  resolution: "@types/offscreencanvas@npm:2019.3.0"
+  checksum: 006361d170aac80925b16a8c0421d5ee7bfe6acb5cd6b22407e2c28be091becc7de5ba1fd21293a1fdff70648918d9c035001ffafd4d6c49d1c5a22dab88ed0d
   languageName: node
   linkType: hard
 
@@ -1422,6 +1568,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: dc6a6df507656004e242dcb02c784479deca516d5f4b58a1707e708022b269ae147e1da0521f3e8ad0d63638869d87e0adc023f0bd5454aa6f72ac66c7525cf5
+  languageName: node
+  linkType: hard
+
+"@types/seedrandom@npm:^2.4.28":
+  version: 2.4.30
+  resolution: "@types/seedrandom@npm:2.4.30"
+  checksum: 1bcf634bb0146b5de443d4581556795e52186f830072ef12f42efb6f15a4e9950630f1c4322356df0f39e953436d4fb17b5fb2834e867ff6cf6e5570849ebad2
   languageName: node
   linkType: hard
 
@@ -1450,6 +1603,20 @@ __metadata:
   version: 0.0.15
   resolution: "@types/web-bluetooth@npm:0.0.15"
   checksum: 4e3b3b1c0baf6735690ce0c5ffaac53de3dbd16362316cbc5e32970bcb1e1baf16dae0a9f30fe86256ad0ee22a4533423f443835273efc54b15235086ebda85b
+  languageName: node
+  linkType: hard
+
+"@types/webgl-ext@npm:0.0.30":
+  version: 0.0.30
+  resolution: "@types/webgl-ext@npm:0.0.30"
+  checksum: c98aa8af2d24d54dc29d836aed0ca5acff45903dc91879d62110e84e615024ca071af69d1dcff26857aa2ab80c86bea9373d718616dcc61dbfdc6a6dd917a064
+  languageName: node
+  linkType: hard
+
+"@types/webgl2@npm:0.0.6":
+  version: 0.0.6
+  resolution: "@types/webgl2@npm:0.0.6"
+  checksum: 32a6ff40882b065742ee40e4c2e3d62958d553212743c514e3202d87864276fc8c3c2f278587cef91f5d080bd4ad6ceaa18046f0154f387613ab66f10d1f01ca
   languageName: node
   linkType: hard
 
@@ -1883,6 +2050,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/compiler-sfc@npm:2.7.8":
+  version: 2.7.8
+  resolution: "@vue/compiler-sfc@npm:2.7.8"
+  dependencies:
+    "@babel/parser": ^7.18.4
+    postcss: ^8.4.14
+    source-map: ^0.6.1
+  checksum: da0b4b0866224fe2aee376a88c25914da4e73ba9e11e7aa2ed240b99897735b4a988e951dcae9c8f0843216c5a97050bf16e1bb04bf65541444a8bdfedc35b38
+  languageName: node
+  linkType: hard
+
 "@vue/compiler-sfc@npm:3.2.37":
   version: 3.2.37
   resolution: "@vue/compiler-sfc@npm:3.2.37"
@@ -2037,6 +2215,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@webgpu/types@npm:0.1.16":
+  version: 0.1.16
+  resolution: "@webgpu/types@npm:0.1.16"
+  checksum: 550732f427def1147ddcfa4f833e27f9c3c2263dd7fad28a084a151d9125065b64e7c56f7ac349fc8f87238445e312dd019d5469dc15202e61b2e9c1e37622cc
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -2099,12 +2284,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"adm-zip@npm:^0.5.2":
+  version: 0.5.9
+  resolution: "adm-zip@npm:0.5.9"
+  checksum: 4909bc04119fdd5e8f8ba43826e50623e5c427cf0a939c809d4f9456a6a03c6aa0544e82088739de9ba16b7649f71b99ccbbddc7b2c38bd6143f9c4726cc7ed9
+  languageName: node
+  linkType: hard
+
 "agent-base@npm:6, agent-base@npm:^6.0.2":
   version: 6.0.2
   resolution: "agent-base@npm:6.0.2"
   dependencies:
     debug: 4
   checksum: f52b6872cc96fd5f622071b71ef200e01c7c4c454ee68bc9accca90c98cfb39f2810e3e9aa330435835eedc8c23f4f8a15267f67c6e245d2b33757575bdac49d
+  languageName: node
+  linkType: hard
+
+"agent-base@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "agent-base@npm:4.3.0"
+  dependencies:
+    es6-promisify: ^5.0.0
+  checksum: 0c10891060e579c67efafd6b62223666c4b4129b521eac3e9ad272a137545bcedb54ce352273b7ad21a0024060e4f1360ae9a465ac87e2af18883c937d39979f
   languageName: node
   linkType: hard
 
@@ -2280,6 +2481,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"argparse@npm:^1.0.10":
+  version: 1.0.10
+  resolution: "argparse@npm:1.0.10"
+  dependencies:
+    sprintf-js: ~1.0.2
+  checksum: 7ca6e45583a28de7258e39e13d81e925cfa25d7d4aacbf806a382d3c02fcb13403a07fb8aeef949f10a7cfe4a62da0e2e807b348a5980554cc28ee573ef95945
+  languageName: node
+  linkType: hard
+
 "argparse@npm:^2.0.1":
   version: 2.0.1
   resolution: "argparse@npm:2.0.1"
@@ -2351,6 +2561,13 @@ __metadata:
   version: 3.2.4
   resolution: "async@npm:3.2.4"
   checksum: 43d07459a4e1d09b84a20772414aa684ff4de085cbcaec6eea3c7a8f8150e8c62aa6cd4e699fe8ee93c3a5b324e777d34642531875a0817a35697522c1b02e89
+  languageName: node
+  linkType: hard
+
+"asynckit@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "asynckit@npm:0.4.0"
+  checksum: 7b78c451df768adba04e2d02e63e2d0bf3b07adcd6e42b4cf665cb7ce899bedd344c69a1dcbce355b5f972d597b25aaa1c1742b52cffd9caccb22f348114f6be
   languageName: node
   linkType: hard
 
@@ -2892,6 +3109,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"combined-stream@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "combined-stream@npm:1.0.8"
+  dependencies:
+    delayed-stream: ~1.0.0
+  checksum: 49fa4aeb4916567e33ea81d088f6584749fc90c7abec76fd516bf1c5aa5c79f3584b5ba3de6b86d26ddd64bae5329c4c7479343250cfe71c75bb366eae53bb7c
+  languageName: node
+  linkType: hard
+
 "commander@npm:^2.20.0":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
@@ -2999,6 +3225,13 @@ __metadata:
     depd: ~2.0.0
     keygrip: ~1.1.0
   checksum: 806055a44f128705265b1bc6a853058da18bf80dea3654ad99be20985b1fa1b14f86c1eef73644aab8071241f8a78acd57202b54c4c5c70769fc694fbb9c4edc
+  languageName: node
+  linkType: hard
+
+"core-js@npm:3, core-js@npm:^3.6.5":
+  version: 3.24.1
+  resolution: "core-js@npm:3.24.1"
+  checksum: 6fb5bf0fd9e9f3e69d95616dd03332fea6758a715d2628c108b5faf17b48b0f580e90c4febb0a523c4665b0991a810de16289f86187fe79d70cc722dbd3edf0e
   languageName: node
   linkType: hard
 
@@ -3214,6 +3447,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "csstype@npm:3.1.0"
+  checksum: 644e986cefab86525f0b674a06889cfdbb1f117e5b7d1ce0fc55b0423ecc58807a1ea42ecc75c4f18999d14fc42d1d255f84662a45003a52bb5840e977eb2ffd
+  languageName: node
+  linkType: hard
+
 "cuint@npm:^0.2.2":
   version: 0.2.2
   resolution: "cuint@npm:0.2.2"
@@ -3330,6 +3570,13 @@ __metadata:
   version: 6.0.0
   resolution: "defu@npm:6.0.0"
   checksum: 3c24ef0009b796e32a1655a23fc1f11a79b42012255b6bc88889242da77b7e45bfa4293d9661d28f3f6c12c931309e18f5047efa492670585a3da768887cea74
+  languageName: node
+  linkType: hard
+
+"delayed-stream@npm:~1.0.0":
+  version: 1.0.0
+  resolution: "delayed-stream@npm:1.0.0"
+  checksum: 46fe6e83e2cb1d85ba50bd52803c68be9bd953282fa7096f51fc29edd5d67ff84ff753c51966061e5ba7cb5e47ef6d36a91924eddb7f3f3483b1c560f77a0020
   languageName: node
   linkType: hard
 
@@ -3667,6 +3914,22 @@ __metadata:
     is-date-object: ^1.0.1
     is-symbol: ^1.0.2
   checksum: 4ead6671a2c1402619bdd77f3503991232ca15e17e46222b0a41a5d81aebc8740a77822f5b3c965008e631153e9ef0580540007744521e72de8e33599fca2eed
+  languageName: node
+  linkType: hard
+
+"es6-promise@npm:^4.0.3":
+  version: 4.2.8
+  resolution: "es6-promise@npm:4.2.8"
+  checksum: 95614a88873611cb9165a85d36afa7268af5c03a378b35ca7bda9508e1d4f1f6f19a788d4bc755b3fd37c8ebba40782018e02034564ff24c9d6fa37e959ad57d
+  languageName: node
+  linkType: hard
+
+"es6-promisify@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "es6-promisify@npm:5.0.0"
+  dependencies:
+    es6-promise: ^4.0.3
+  checksum: fbed9d791598831413be84a5374eca8c24800ec71a16c1c528c43a98e2dadfb99331483d83ae6094ddb9b87e6f799a15d1553cebf756047e0865c753bc346b92
   languageName: node
   linkType: hard
 
@@ -4800,6 +5063,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"form-data@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "form-data@npm:3.0.1"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.8
+    mime-types: ^2.1.12
+  checksum: b019e8d35c8afc14a2bd8a7a92fa4f525a4726b6d5a9740e8d2623c30e308fbb58dc8469f90415a856698933c8479b01646a9dff33c87cc4e76d72aedbbf860d
+  languageName: node
+  linkType: hard
+
 "formdata-polyfill@npm:^4.0.10":
   version: 4.0.10
   resolution: "formdata-polyfill@npm:4.0.10"
@@ -5145,6 +5419,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"google-protobuf@npm:^3.9.2":
+  version: 3.21.0
+  resolution: "google-protobuf@npm:3.21.0"
+  checksum: 612a91b8175ab3608ad20be043d41bf757623ca3dce83b6e8b27fed79e9cecba823e6709055ab439e0d59699f48a65416300b41a36ffb5ac98144a940898fea0
+  languageName: node
+  linkType: hard
+
 "graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.4, graceful-fs@npm:^4.2.6, graceful-fs@npm:^4.2.9":
   version: 4.2.10
   resolution: "graceful-fs@npm:4.2.10"
@@ -5365,6 +5646,16 @@ __metadata:
   version: 1.2.2
   resolution: "http-shutdown@npm:1.2.2"
   checksum: 5dccd94f4fe4f51f9cbd7ec4586121160cd6470728e581662ea8032724440d891c4c92b8210b871ac468adadb3c99c40098ad0f752a781a550abae49dfa26206
+  languageName: node
+  linkType: hard
+
+"https-proxy-agent@npm:^2.2.1":
+  version: 2.2.4
+  resolution: "https-proxy-agent@npm:2.2.4"
+  dependencies:
+    agent-base: ^4.3.0
+    debug: ^3.1.0
+  checksum: 5fa8eab256b117a8badb5747bedf8b3a9de1fbabdccb26ff3132385426fdc3ad3c8b092ce52a1b74c70229b971df623f4f5a0c17f78e6a8fe5d10fc65d6ed8b8
   languageName: node
   linkType: hard
 
@@ -6355,6 +6646,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"long@npm:4.0.0":
+  version: 4.0.0
+  resolution: "long@npm:4.0.0"
+  checksum: 16afbe8f749c7c849db1f4de4e2e6a31ac6e617cead3bdc4f9605cb703cd20e1e9fc1a7baba674ffcca57d660a6e5b53a9e236d7b25a295d3855cca79cc06744
+  languageName: node
+  linkType: hard
+
 "loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
@@ -6532,7 +6830,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime-types@npm:^2.1.18, mime-types@npm:~2.1.24, mime-types@npm:~2.1.34":
+"mime-types@npm:^2.1.12, mime-types@npm:^2.1.18, mime-types@npm:~2.1.24, mime-types@npm:~2.1.34":
   version: 2.1.35
   resolution: "mime-types@npm:2.1.35"
   dependencies:
@@ -6910,7 +7208,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.7":
+"node-fetch@npm:^2.6.7, node-fetch@npm:~2.6.1":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
@@ -8193,6 +8491,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"progress@npm:^2.0.0":
+  version: 2.0.3
+  resolution: "progress@npm:2.0.3"
+  checksum: f67403fe7b34912148d9252cb7481266a354bd99ce82c835f79070643bb3c6583d10dbcfda4d41e04bbc1d8437e9af0fb1e1f2135727878f5308682a579429b7
+  languageName: node
+  linkType: hard
+
 "promise-inflight@npm:^1.0.1":
   version: 1.0.1
   resolution: "promise-inflight@npm:1.0.1"
@@ -8410,6 +8715,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"regenerator-runtime@npm:^0.13.5":
+  version: 0.13.9
+  resolution: "regenerator-runtime@npm:0.13.9"
+  checksum: 65ed455fe5afd799e2897baf691ca21c2772e1a969d19bb0c4695757c2d96249eb74ee3553ea34a91062b2a676beedf630b4c1551cc6299afb937be1426ec55e
+  languageName: node
+  linkType: hard
+
 "regexp-tree@npm:^0.1.24, regexp-tree@npm:~0.1.1":
   version: 0.1.24
   resolution: "regexp-tree@npm:0.1.24"
@@ -8571,6 +8883,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rimraf@npm:^2.6.2":
+  version: 2.7.1
+  resolution: "rimraf@npm:2.7.1"
+  dependencies:
+    glob: ^7.1.3
+  bin:
+    rimraf: ./bin.js
+  checksum: cdc7f6eacb17927f2a075117a823e1c5951792c6498ebcce81ca8203454a811d4cf8900314154d3259bb8f0b42ab17f67396a8694a54cae3283326e57ad250cd
+  languageName: node
+  linkType: hard
+
 "rimraf@npm:^3.0.2":
   version: 3.0.2
   resolution: "rimraf@npm:3.0.2"
@@ -8697,6 +9020,9 @@ __metadata:
     "@tailwindcss/forms": 0.5.2
     "@tailwindcss/line-clamp": 0.4.0
     "@tailwindcss/typography": 0.5.4
+    "@tensorflow/tfjs": ^3.19.0
+    "@tensorflow/tfjs-backend-webgl": ^3.19.0
+    "@tensorflow/tfjs-node": ^3.19.0
     "@unocss/nuxt": 0.44.7
     "@vueuse/nuxt": 9.0.0
     eslint: 8.20.0
@@ -8709,7 +9035,10 @@ __metadata:
     prettier-plugin-tailwindcss: 0.1.13
     sass: 1.54.0
     sass-loader: 13.0.2
+    simple-vue-camera: ^1.1.1
     typescript: 4.7.4
+    vue-web-cam: ^1.9.0
+    vue3-transitions: ^1.0.0
   languageName: unknown
   linkType: soft
 
@@ -8821,6 +9150,13 @@ __metadata:
   version: 0.2.1
   resolution: "scule@npm:0.2.1"
   checksum: d9731b4c3560ce6983d23cc594395b718bc3c08ea3da930a9cd2bd3feb137ad3295521bcbc50baa82dc05d8521a7a41d6b78d2723e5195c053d93359f5808706
+  languageName: node
+  linkType: hard
+
+"seedrandom@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "seedrandom@npm:3.0.5"
+  checksum: 728b56bc3bc1b9ddeabd381e449b51cb31bdc0aa86e27fcd0190cea8c44613d5bcb2f6bb63ed79f78180cbe791c20b8ec31a9627f7b7fc7f476fd2bdb7e2da9f
   languageName: node
   linkType: hard
 
@@ -8968,6 +9304,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"simple-vue-camera@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "simple-vue-camera@npm:1.1.1"
+  checksum: f47a9c20e71e76a531d643e1035b766dd4283048e385d8385a23559c2a9300c2426954659952118b091460681cefe94c3555da6ec6fd4c97ffc14d61723e1409
+  languageName: node
+  linkType: hard
+
 "sirv@npm:^2.0.2":
   version: 2.0.2
   resolution: "sirv@npm:2.0.2"
@@ -9111,6 +9454,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sprintf-js@npm:~1.0.2":
+  version: 1.0.3
+  resolution: "sprintf-js@npm:1.0.3"
+  checksum: 19d79aec211f09b99ec3099b5b2ae2f6e9cdefe50bc91ac4c69144b6d3928a640bb6ae5b3def70c2e85a2c3d9f5ec2719921e3a59d3ca3ef4b2fd1a4656a0df3
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^9.0.0":
   version: 9.0.1
   resolution: "ssri@npm:9.0.1"
@@ -9211,7 +9561,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string_decoder@npm:^1.1.1":
+"string_decoder@npm:^1.1.1, string_decoder@npm:^1.3.0":
   version: 1.3.0
   resolution: "string_decoder@npm:1.3.0"
   dependencies:
@@ -9434,7 +9784,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar@npm:^4.4.1":
+"tar@npm:^4.4.1, tar@npm:^4.4.6":
   version: 4.4.19
   resolution: "tar@npm:4.4.19"
   dependencies:
@@ -10222,7 +10572,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.2.37":
+"vue-web-cam@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "vue-web-cam@npm:1.9.0"
+  dependencies:
+    vue: ^2.6.10
+  checksum: fcfefdc87955e908aeb9d8a50416fd44de2a65480534f985bbf9540cf3819c8c7ebd407bf7b7845e1f3068af5d11e8c53f9e662202806a5ee5400463ea7ced09
+  languageName: node
+  linkType: hard
+
+"vue3-transitions@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "vue3-transitions@npm:1.0.0"
+  dependencies:
+    core-js: ^3.6.5
+    vue: ^3.0.0
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: 85df6f981b8e67eb0aa9e58933991feefd9065c39817a2dbfc4ac2e4782ee9a49743154a1b1b1f2176827708a6c8cb2490529b3e6693324b39ff31fa84012946
+  languageName: node
+  linkType: hard
+
+"vue@npm:^2.6.10":
+  version: 2.7.8
+  resolution: "vue@npm:2.7.8"
+  dependencies:
+    "@vue/compiler-sfc": 2.7.8
+    csstype: ^3.1.0
+  checksum: 45fc85a13fc027798ad859fe4a5509b54217ae2f129240fc349a799bd4dbc6848ef8fa9968ab7ef7afcb954735882dbfdeb746673aa3f051e4d7ae555c213a1b
+  languageName: node
+  linkType: hard
+
+"vue@npm:^3.0.0, vue@npm:^3.2.37":
   version: 3.2.37
   resolution: "vue@npm:3.2.37"
   dependencies:
@@ -10442,10 +10823,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"yargs-parser@npm:^20.2.2":
+  version: 20.2.9
+  resolution: "yargs-parser@npm:20.2.9"
+  checksum: 8bb69015f2b0ff9e17b2c8e6bfe224ab463dd00ca211eece72a4cd8a906224d2703fb8a326d36fdd0e68701e201b2a60ed7cf81ce0fd9b3799f9fe7745977ae3
+  languageName: node
+  linkType: hard
+
 "yargs-parser@npm:^21.0.0":
   version: 21.0.1
   resolution: "yargs-parser@npm:21.0.1"
   checksum: c3ea2ed12cad0377ce3096b3f138df8267edf7b1aa7d710cd502fe16af417bafe4443dd71b28158c22fcd1be5dfd0e86319597e47badf42ff83815485887323a
+  languageName: node
+  linkType: hard
+
+"yargs@npm:^16.0.3":
+  version: 16.2.0
+  resolution: "yargs@npm:16.2.0"
+  dependencies:
+    cliui: ^7.0.2
+    escalade: ^3.1.1
+    get-caller-file: ^2.0.5
+    require-directory: ^2.1.1
+    string-width: ^4.2.0
+    y18n: ^5.0.5
+    yargs-parser: ^20.2.2
+  checksum: b14afbb51e3251a204d81937c86a7e9d4bdbf9a2bcee38226c900d00f522969ab675703bee2a6f99f8e20103f608382936034e64d921b74df82b63c07c5e8f59
   languageName: node
   linkType: hard
 

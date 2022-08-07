@@ -1,0 +1,23 @@
+{
+  "scanTitle": "가구 스캔",
+  "scanCardTitle": "스캔하기",
+  "scanCardInfo": "가구를 스캔할 수 있습니다.",
+  "scanCardModel": "스캔 모델",
+  "recognized": {
+    "Card": {
+      "NumberOfRecognition": {
+        "Title": "인식 횟수",
+        "Suffix": "회"
+      },
+      "CleanInfo": {
+        "Title": "청소 정보",
+        "Suffix": "회"
+      },
+      "LastClean": {
+        "Title": "마지막 청소",
+        "Suffix": "일 전"
+      }
+    }
+  },
+  "recognizedFurniture": "인식한 가구"
+}

@@ -6,5 +6,9 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "i18n-ally.localesPaths": [
+    "src/locales"
+  ],
+  "i18n-ally.keystyle": "nested"
 }

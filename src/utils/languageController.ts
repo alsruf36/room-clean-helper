@@ -9,11 +9,11 @@ export function languageController() {
   // methods
   const readBrowserLanguage = (): string => {
     try {
-      const lang = window ? window.navigator.language : 'en-US'
-      return availableLocales[lang] ? lang : 'en-US'
+      const lang = window ? window.navigator.language : 'ko-KR'
+      return availableLocales[lang] ? lang : 'ko-KR'
     }
     catch (error) {
-      return 'en-US'
+      return 'ko-KR'
     }
   }
   const readUserLocale = (): string =>

@@ -19,7 +19,13 @@
     "@tailwindcss/forms": "0.5.2",
     "@tailwindcss/line-clamp": "0.4.0",
     "@tailwindcss/typography": "0.5.4",
-    "pinia": "2.0.17"
+    "@tensorflow/tfjs": "^3.19.0",
+    "@tensorflow/tfjs-backend-webgl": "^3.19.0",
+    "@tensorflow/tfjs-node": "^3.19.0",
+    "pinia": "2.0.17",
+    "simple-vue-camera": "^1.1.1",
+    "vue-web-cam": "^1.9.0",
+    "vue3-transitions": "^1.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.25.2",
