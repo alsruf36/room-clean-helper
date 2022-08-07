@@ -59,5 +59,12 @@ export default defineNuxtConfig({
   },
   vite: {
     logLevel: 'info',
+    server: {
+      port: 443,
+      https: true,
+      hmr: {
+        protocol: 'wss'
+      }
+    }
   },
 })

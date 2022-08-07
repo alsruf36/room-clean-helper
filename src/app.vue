@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { InitApp } from '~/utils/initApp'
-import '@tensorflow/tfjs-backend-webgl'
 InitApp()
 const locale = useState<string>('locale.i18n')
 </script>

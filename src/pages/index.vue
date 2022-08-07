@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { FadeInOut } from 'vue3-transitions'
-import ScanCard from '../components/scanCard.vue'
 import { FurnitureInfoProps } from '~/types'
 const { t } = useLang()
 
@@ -51,7 +49,53 @@ const isScan = ref(false)
           <p class="flex-grow-0 flex-shrink-0 text-3xl font-semibold text-left text-gray-700">
             {{ t("scanTitle") }}
           </p>
-          <ScanCard />
+          <div
+            class="flex flex-col justify-start items-start self-stretch flex-grow gap-2.5 px-[19px] py-[26px] rounded-[10px] bg-indigo-800"
+          >
+            <transition
+              enter-active-class="duration-300 ease-out"
+              enter-from-class="transform scale-75 opacity-0"
+              enter-to-class="scale-100 opacity-100"
+              leave-active-class="duration-200 ease-in"
+              leave-from-class="scale-100 opacity-100"
+              leave-to-class="transform scale-75 opacity-0"
+            >
+              <div v-if="!isScan">
+                <div class="flex flex-col items-start justify-center flex-grow-0 flex-shrink-0">
+                  <div class="relative flex items-start justify-start flex-grow-0 flex-shrink-0">
+                    <p class="flex-grow-0 flex-shrink-0 text-4xl font-bold text-left text-white">
+                      {{ $t('scanCardTitle') }}
+                    </p>
+                  </div>
+                  <div class="relative flex items-start justify-start flex-grow-0 flex-shrink-0">
+                    <p class="flex-grow-0 flex-shrink-0 text-xl font-semibold text-left text-white">
+                      {{ $t('scanCardInfo') }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div v-else>
+                <CameraCard />
+              </div>
+            </transition>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center self-stretch flex-grow-0 flex-shrink-0 h-[50px] gap-2.5 px-[19px] py-[9px] rounded-[10px] bg-[#371a94]"
+            style="box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.1), 0px 1px 2px 0 rgba(0,0,0,0.06);"
+          >
+            <div class="flex items-center self-stretch justify-between flex-grow-0 flex-shrink-0">
+              <div class="relative flex items-start justify-start flex-grow-0 flex-shrink-0">
+                <p class="flex-grow-0 flex-shrink-0 text-xl font-semibold text-left text-white">
+                  {{ $t('scanCardModel') }}
+                </p>
+              </div>
+              <div class="relative flex items-start justify-start flex-grow-0 flex-shrink-0">
+                <p class="flex-grow-0 flex-shrink-0 text-xl font-medium text-right text-white">
+                  YOLOV4 N
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <transition
